@@ -1,0 +1,17 @@
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const clamp = (value, min, max) => {
+    return Math.min(Math.max(value, min), max);
+  }
+
+ transform: `translateZ(0) scale(${clamp(1 + scrollPosition / 50, 1, 1.5)})`,
