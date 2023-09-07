@@ -51,7 +51,7 @@ function Header() {
         <h2 className="header-text">{headerText}<span className="header-text-cursor">{next === 0 ? '|' : '|'}</span></h2>
       </div>
       <p>
-         We are a team of skilled professionals specializing in Frontend Web development, Graphic design, Accounting services, and Virtual assistance. With expertise in React, JavaScript, CSS, SASS, HTML, and Jest, we deliver websites and web apps that are tailored to your specific needs. Our graphic designer provides stunning logos and designs to make your brand stand out. Additionally, our accounting services and virtual assistance ensure that your business runs smoothly behind the scenes. Let us help you take your business to the next level.
+         We are a team of skilled professionals specializing in Front-end and Back-end software development, Graphic design, Accounting services, and Virtual assistance. With expertise in React, JavaScript, CSS, SASS, HTML, and Jest, we deliver websites and web apps that are tailored to your specific needs. Our graphic designer provides stunning logos and designs to make your brand stand out. Additionally, our accounting services and virtual assistance ensure that your business runs smoothly behind the scenes. Let us help you take your business to the next level.
       </p>
       <button className="projects">See our previous projects</button>
       <div className="social-links"> 

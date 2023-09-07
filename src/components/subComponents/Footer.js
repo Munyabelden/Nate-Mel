@@ -15,7 +15,7 @@ function Footer() {
         </ul>
       </div>
       <p>
-        Partner with NateMel today for expert full-stack development services and take your digital strategy to the next level.
+        Partner with Nate~Mel today for expert full-stack development services and take your digital strategy to the next level.
       </p>
       <span className="copyright">Copyright © 2023 Nate~Mel</span> 
     </div>
