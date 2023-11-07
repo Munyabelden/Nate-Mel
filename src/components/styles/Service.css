@@ -1,0 +1,54 @@
+.services {
+  display: flex;
+  margin: 40px auto;
+  height: 80vh;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;;
+  margin-left: -90px;
+  width: 90%;
+}
+
+.carousel {
+  width: 500px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(26, 26, 69);
+  margin-inline: 10px;
+}
+
+.item-1 {
+  background-image: url('../assets/programming.jpg');
+}
+
+.item-2 {
+  background-image: url('../assets/html.jpg');
+}
+
+.item-3 {
+  background-image: url('../assets/team.jpg');
+}
+
+.item-4 {
+  background-image: url('../assets/812.jpg');
+}
+
+.item-5 {
+  background-image: url('../assets/colors.jpg');
+}
+
+.item-6 {
+  background-image: url('../assets/business.jpg');
+}
+
+.item-7 {
+  background-image: url('../assets/medium.jpg');
+}

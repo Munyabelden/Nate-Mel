@@ -1,10 +1,12 @@
 import React from 'react';
 import Header from './subComponents/Header';
+import Services from './Services';
 
 function Home() {
   return (
     <div>
       <Header />
+      <Services />
       <div>
         <h2>Our Company</h2>
         <p>

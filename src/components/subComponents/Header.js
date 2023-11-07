@@ -38,31 +38,25 @@ function Header() {
         setHeaderText(texts[index].slice(0, count + 1));
         count++;
       }
-    }, 250);
+    }, 350);
   
     return () => clearInterval(intervalId);
   }, []);  
 
   return (
-    <div className="header" style={{
-      backgroundImage: `url(${backgrounds[backgroundIndex]})`,
-    }}>
+    <div className="header" 
+      style={{
+        backgroundImage: `url(${backgrounds[backgroundIndex]})`,
+      }}
+    >
       <div className="header-text-container">
         <h2 className="header-text">{headerText}<span className="header-text-cursor">{next === 0 ? '|' : '|'}</span></h2>
       </div>
       <p>
-         We are a team of skilled professionals specializing in Front-end and Back-end software development, Graphic design, Accounting services, and Virtual assistance. With expertise in React, JavaScript, CSS, SASS, HTML, and Jest, we deliver websites and web apps that are tailored to your specific needs. Our graphic designer provides stunning logos and designs to make your brand stand out. Additionally, our accounting services and virtual assistance ensure that your business runs smoothly behind the scenes. Let us help you take your business to the next level.
+         {/* We are a team of skilled professionals specializing in Front-end and Back-end software development, Graphic design, Accounting services, and Virtual assistance. With expertise in React, JavaScript, CSS, SASS, HTML, and Jest, we deliver websites and web apps that are tailored to your specific needs. Our graphic designer provides stunning logos and designs to make your brand stand out. Additionally, our accounting services and virtual assistance ensure that your business runs smoothly behind the scenes. Let us help you take your business to the next level. */}
+         We are a versatile team with expertise in web development, graphic design, accounting, and virtual assistance. Our services include custom web solutions, captivating designs, and streamlined backend support. Let us enhance your business.
       </p>
       <button className="projects">See our previous projects</button>
-      <div className="social-links"> 
-        <h3>Let's connect</h3>
-        <ul>
-          <li><a href="https://github.com/Munyabelden/" rel="noreferrer" target="_blank"><i className="fa-brands fa-square-github" /></a></li>
-          <li><a href="https://www.linkedin.com/in/munyaradzi-mugauri-828a7b24a/" rel="noreferrer" target="_blank"><i className="fa-brands fa-linkedin" /></a></li>
-          <li><a href="https://twitter.com/munyaradzi045" rel="noreferrer" target="_blank"><i className="fa-brands fa-square-twitter" /></a></li>
-          <li><a href="https://github.com/Munyabelden/" rel="noreferrer" target="_blank"><i className="fa-brands fa-facebook" /></a></li>
-        </ul>
-      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './styles/Contact.css';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -32,7 +33,7 @@ function Contact() {
   }
 
   return (
-    <div>
+    <div className="form-container">
       <h2>Get in touch</h2>
       <form onSubmit={handleSubmit}>
         <div>

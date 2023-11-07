@@ -36,6 +36,12 @@ function Navbar() {
         <li><NavLink to="/about" isActive={ () => location.pathname === "/about"} className="underline">About Us</NavLink></li>
         <li><NavLink to="/contact" isActive={ () => location.pathname === "/contact"} className="underline">Contact Us</NavLink></li>
       </ul>
+      <ul>
+        <li><a href="https://github.com/Munyabelden/" rel="noreferrer" target="_blank"><i className="fa-brands fa-square-github" /></a></li>
+          <li><a href="https://www.linkedin.com/in/munyaradzi-mugauri-828a7b24a/" rel="noreferrer" target="_blank"><i className="fa-brands fa-linkedin" /></a></li>
+          <li><a href="https://twitter.com/munyaradzi045" rel="noreferrer" target="_blank"><i className="fa-brands fa-square-twitter" /></a></li>
+          <li><a href="https://github.com/Munyabelden/" rel="noreferrer" target="_blank"><i className="fa-brands fa-facebook" /></a></li>
+      </ul>
     </nav>
   );
 }

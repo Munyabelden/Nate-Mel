@@ -29,7 +29,8 @@ ul {
 .header p,
 .header div {
   z-index: 10;
-  text-align: center;
+  width: 80%;
+  text-align: start;
 }
 
 .header p {
@@ -50,6 +51,10 @@ ul {
   background-size: cover;
   filter: blur(5px);
   z-index: 0;
+}
+
+.header-text-container {
+  margin-block: 30px;
 }
 
 
@@ -96,7 +101,6 @@ ul {
   cursor: pointer;
   z-index: 10;
   width: fit-content;
-  margin-inline: auto;
   margin-block: 20px;
   font-size: 17px;
   font-weight: 500;
