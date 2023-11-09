@@ -1,7 +1,9 @@
 .services {
-  display: flex;
+  display: block;
   margin: 40px auto;
   height: 80vh;
+  padding: 20px;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -10,45 +12,81 @@ h2 {
 
 .carousel-container {
   display: flex;
+  width: 300%;
   flex-direction: row;
-  gap: 10px;;
-  margin-left: -90px;
-  width: 90%;
 }
 
-.carousel {
-  width: 500px;
-  height: 400px;
+.carousel-item {
+  width: 700px;
+  margin: 0 10px;
+  transition: transform 0.5s;
+}
+
+.carousel-item div {
   background-size: cover;
-  background-repeat: no-repeat;
-  color: rgb(26, 26, 69);
-  margin-inline: 10px;
+}
+
+.carousel-item.active {
+  transform: scale(1.2);
+  background-color: #007bff;
+  color: #fff;
+}
+
+.carousel-control {
+  display: block;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    flex: 1; /* Show only 1 item on mobile */
+  }
+
+  .carousel-control {
+    display: block; /* Show controls on mobile */
+  }
+}
+
+.carousel-control:hover {
+  background-color: #0056b3;
 }
 
 .item-1 {
   background-image: url('../assets/programming.jpg');
+  height: 300px;
 }
 
 .item-2 {
   background-image: url('../assets/html.jpg');
+  height: 300px;
 }
 
 .item-3 {
   background-image: url('../assets/team.jpg');
+  height: 300px;
 }
 
 .item-4 {
   background-image: url('../assets/812.jpg');
+  height: 300px;
 }
 
 .item-5 {
   background-image: url('../assets/colors.jpg');
+  height: 300px;
 }
 
 .item-6 {
   background-image: url('../assets/business.jpg');
+  height: 300px;
 }
 
 .item-7 {
   background-image: url('../assets/medium.jpg');
+  height: 300px;
 }

@@ -1,0 +1,32 @@
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 80px auto;
+  gap: 20px;
+}
+
+.image {
+  width: 80%;
+}
+
+img {
+  width: 600px;
+  -o-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.strategy {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 80px auto;
+  gap: 20px;
+}

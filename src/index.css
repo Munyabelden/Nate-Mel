@@ -25,3 +25,8 @@ a {
 img {
   width: 100vw;
 }
+
+h2 {
+  margin-left: -80px;
+  padding: 0;
+} 
