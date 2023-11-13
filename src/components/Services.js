@@ -17,10 +17,10 @@ const items = [
     <div className='item-5'>
     <h3>Graphic Design</h3>
   </div>,
-    <div className='item-6'>
+  <div className='item-6'>
     <h3>Accounting Services</h3>
   </div>,
-    <div className='item-7'>
+  <div className='item-7'>
     <h3>Virtual Assistance</h3>
   </div>,
 ];

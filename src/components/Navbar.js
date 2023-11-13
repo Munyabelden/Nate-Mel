@@ -33,7 +33,7 @@ function Navbar() {
       <h1><NavLink to="/">Nate~Mel</NavLink></h1>
       <ul>
         <li><NavLink to="/" isActive={ () => location.pathname === "/"} className="underline">Home</NavLink></li>
-        <li><NavLink to="/about" isActive={ () => location.pathname === "/about"} className="underline">About Us</NavLink></li>
+        <li><NavLink to="/about" isActive={ () => location.pathname === "/about"} className="underline">Services</NavLink></li>
         <li><NavLink to="/contact" isActive={ () => location.pathname === "/contact"} className="underline">Contact Us</NavLink></li>
       </ul>
       <ul>

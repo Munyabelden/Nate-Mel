@@ -1,0 +1,60 @@
+.services {
+  display: block;
+  margin: 40px auto;
+  height: 80vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    flex: 1;
+  }
+
+  .carousel-control {
+    display: block; 
+  }
+}
+
+.carousel-control:hover {
+  background-color: #0056b3;
+}
+
+.item-1 {
+  background-image: url('../assets/programming.jpg');
+  height: 300px;
+}
+
+.item-2 {
+  background-image: url('../assets/html.jpg');
+  height: 300px;
+}
+
+.item-3 {
+  background-image: url('../assets/team.jpg');
+  height: 300px;
+}
+
+.item-4 {
+  background-image: url('../assets/812.jpg');
+  height: 300px;
+}
+
+.item-5 {
+  background-image: url('../assets/colors.jpg');
+  height: 300px;
+}
+
+.item-6 {
+  background-image: url('../assets/business.jpg');
+  height: 300px;
+}
+
+.item-7 {
+  background-image: url('../assets/medium.jpg');
+  height: 300px;
+}

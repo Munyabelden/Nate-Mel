@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from './subComponents/Header';
+import MultiCarouselSlider from './subComponents/Carousel';
 import Image from './assets/aerial-view-business-team.jpg';
 import Image2 from './assets/business-people-meeting.jpg';
-import Services from './Services';
+// import Services from './Services';
 import './styles/Home.css'
 import Footer from './subComponents/Footer';
 
@@ -10,7 +11,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <Services />
+      <MultiCarouselSlider />
       <div className="details">
         <div className='infor'>
           <h2>Our Expertise</h2>
