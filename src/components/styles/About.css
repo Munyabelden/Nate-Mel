@@ -38,6 +38,10 @@
   -o-border-radius: 0;
 }
 
+.column {
+  background: rgba(223, 233, 232, 0.5);
+}
+
 .column h3 {
   margin-block: 15px;
 }

@@ -4,57 +4,62 @@
   height: 80vh;
   padding: 20px;
   overflow-x: hidden;
+  color: pink;
 }
 
-h2 {
-  margin-left: 20px;
+.carousel-container {
+  margin-left: 5%;
 }
 
-@media (min-width: 768px) {
-  .carousel-item {
-    flex: 1;
-  }
-
-  .carousel-control {
-    display: block; 
-  }
-}
-
-.carousel-control:hover {
-  background-color: #0056b3;
+.carousel-item {
+  margin-right: 20px;
 }
 
 .item-1 {
   background-image: url('../assets/programming.jpg');
   height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .item-2 {
   background-image: url('../assets/html.jpg');
   height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .item-3 {
   background-image: url('../assets/team.jpg');
   height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .item-4 {
   background-image: url('../assets/812.jpg');
   height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .item-5 {
   background-image: url('../assets/colors.jpg');
   height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .item-6 {
   background-image: url('../assets/business.jpg');
   height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .item-7 {
   background-image: url('../assets/medium.jpg');
   height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

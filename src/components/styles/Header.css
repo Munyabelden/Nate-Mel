@@ -1,7 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 80vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -9,7 +9,7 @@
   position: relative;
   padding-inline: 10%;
   padding-top: 12rem;
-  color: #d5dfe1;
+  color: #CED2D5;
 }
 
 ul {
@@ -88,16 +88,16 @@ ul {
 }
 
 .header .projects {
-  border: 1px solid transparent;
+  background: transparent;
   outline: transparent;
-  background: rgb(247, 251, 252);
-  color: rgb(42, 49, 55);
+  border: 2px solid #9A0F07;
+  color: #CED2D5;
   padding: 6px 14px;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
   cursor: pointer;
   z-index: 10;
   width: fit-content;
@@ -114,7 +114,7 @@ ul {
 .header .projects:hover {
   background: transparent;
   border: 1px solid  rgb(247, 251, 252);
-  color:  rgb(247, 251, 252);
+  color:  #7B8494;
 }
 
 .header .social-links {

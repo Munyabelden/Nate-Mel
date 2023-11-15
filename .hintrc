@@ -9,10 +9,12 @@
         "ignore": [
           "width: fit-content",
           "backdrop-filter",
-          "margin-inline"
+          "margin-inline",
+          "padding-inline"
         ]
       }
     ],
-    "detect-css-reflows/composite": "off"
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/paint": "off"
   }
 }

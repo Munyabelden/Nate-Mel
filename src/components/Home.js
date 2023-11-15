@@ -9,9 +9,32 @@ import Footer from './subComponents/Footer';
 
 function Home() {
   return (
-    <div>
+    <div >
       <Header />
+      <h2 className="home-services-title"> What we do</h2>
       <MultiCarouselSlider />
+      <div className="values">
+        <h2>Our Values</h2>
+        <section className="value-columns">
+          <div class="value-column">
+            <span>01</span>
+            <h3>Dignity</h3>
+            <p>We honor the dignity of individuals and acknowledge the inherent creative abilities within each person. Our investment atmosphere thrives on diversity and inclusivity.</p>
+          </div>
+          <div class="value-column">
+            <span>02</span>
+            <h3>Integrity</h3>
+            <p>We are dedicated to upholding what is ethical as it forms the foundation of our reputation. Essential to us are transparency, truthfulness, and responsibility.</p>
+          </div>
+          <div class="value-column">
+            <span>03</span>
+            <h3>Innovation</h3>
+            <p>
+              We embrace the transformative potential of innovation in shaping lives. Adapting swiftly to the pace of technological advancements, we foster progressive breakthroughs by swiftly investing in promising developments.
+            </p>
+          </div>
+        </section>
+      </div>
       <div className="details">
         <div className='infor'>
           <h2>Our Expertise</h2>

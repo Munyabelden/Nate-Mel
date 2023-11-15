@@ -1,23 +1,35 @@
 import React from 'react';
 import Slider from 'react-slick';
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import '../styles/Slider.css'
+import '../styles/Slider.css';
 
 const MultiCarouselSlider = () => {
+
+  const NextArrow = ({ onClick }) => (
+    <div className="arrow next" onClick={onClick}>
+        Next
+    </div>
+  );
+
+  const PrevArrow = ({ onClick }) => (
+    <div className="arrow prev" onClick={onClick}>
+        Prev
+    </div>
+  );
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Adjust the number of slides to show at a time
+    slidesToShow: 2, // Adjust the number of slides to show at a time
     slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 1.5,
         },
       },
       {
@@ -28,9 +40,10 @@ const MultiCarouselSlider = () => {
         },
       },
     ],
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
-  // Replace the following array with your actual data
   const carouselItems = [
     <div className='item-1'>
       <h3>Full Stack Development</h3>
@@ -57,13 +70,13 @@ const MultiCarouselSlider = () => {
 
   return (
     <div className="carousel-container">
-        <Slider {...settings}>
+      <Slider {...settings}>
         {carouselItems.map((item, index) => (
-            <div key={index}>
-              {item}
-            </div>
+          <div key={index} className="carousel-tem">
+            {item}
+          </div>
         ))}
-        </Slider>
+      </Slider>
     </div>
   );
 };

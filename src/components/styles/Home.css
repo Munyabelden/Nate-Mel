@@ -1,11 +1,67 @@
-.details {
+.home-services-title {
+  font-weight: 800;
+  color: rgb(1, 34, 68);
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+.values {
+  width: 90%;
+  margin: 130px auto;
+}
+
+.values h2 {
+  margin-bottom: 70px;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: rgb(1, 34, 68);
+}
+
+.value-columns {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  margin: 80px auto;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.value-column {
+  transition: 300ms ease-in-out;
+  -webkit-transition: 300ms ease-in-out;
+  -moz-transition: 300ms ease-in-out;
+  -ms-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+}
+
+.value-column h3 {
+  font-size: 26px;
+  margin-block: 50px 20px;
+}
+
+.value-column span {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.value-column p {
+  color: #2b2d34;
+}
+
+.value-column:hover {
+  animation: scaleEffect 0.5s forwards;
+}
+
+@keyframes scaleEffect {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
 
 .image {
@@ -21,12 +77,40 @@ img {
   border-radius: 20px;
 }
 
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 90%;
+  margin: 160px auto;
+  gap: 20px;
+}
+
 .strategy {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 40px;
   width: 90%;
   margin: 80px auto;
   gap: 20px;
+}
+
+.details p {
+  margin-right: 60px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.strategy h2,
+.strategy p {
+  margin-left: 60px;
+}
+
+.strategy p {
+  font-size: 18px;
+  letter-spacing: 0.5px;
 }
