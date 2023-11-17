@@ -29,3 +29,12 @@ img {
 h2 {
   margin: 0;
 }
+
+.hover-area {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5); /* Opaque dot */
+  pointer-events: none; /* Allows the dot to be transparent to pointer events */
+}

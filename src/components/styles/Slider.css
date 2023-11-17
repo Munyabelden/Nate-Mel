@@ -11,13 +11,17 @@
   margin-left: 5%;
 }
 
-.carousel-item {
+.carousel-item div {
   margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .item-1 {
   background-image: url('../assets/programming.jpg');
   height: 300px;
+  width: 350px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -25,6 +29,7 @@
 .item-2 {
   background-image: url('../assets/html.jpg');
   height: 300px;
+  width: 400px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -32,6 +37,7 @@
 .item-3 {
   background-image: url('../assets/team.jpg');
   height: 300px;
+  width: 300px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -39,6 +45,7 @@
 .item-4 {
   background-image: url('../assets/812.jpg');
   height: 300px;
+  width: 300px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -46,6 +53,7 @@
 .item-5 {
   background-image: url('../assets/colors.jpg');
   height: 300px;
+  width: 300px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -53,6 +61,7 @@
 .item-6 {
   background-image: url('../assets/business.jpg');
   height: 300px;
+  width: 300px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -60,6 +69,7 @@
 .item-7 {
   background-image: url('../assets/medium.jpg');
   height: 300px;
+  width: 300px;
   background-size: cover;
   background-repeat: no-repeat;
 }

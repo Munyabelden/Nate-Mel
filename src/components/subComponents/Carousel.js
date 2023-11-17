@@ -22,7 +22,7 @@ const MultiCarouselSlider = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2, // Adjust the number of slides to show at a time
+    slidesToShow: 2.5, // Adjust the number of slides to show at a time
     slidesToScroll: 1,
     responsive: [
       {
@@ -70,9 +70,9 @@ const MultiCarouselSlider = () => {
 
   return (
     <div className="carousel-container">
-      <Slider {...settings}>
+      <Slider {...settings} className="carousel-slider">
         {carouselItems.map((item, index) => (
-          <div key={index} className="carousel-tem">
+          <div key={index} className="carousel-item">
             {item}
           </div>
         ))}

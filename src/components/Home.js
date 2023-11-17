@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import Header from './subComponents/Header';
 import MultiCarouselSlider from './subComponents/Carousel';
 import Image from './assets/aerial-view-business-team.jpg';
@@ -8,6 +8,38 @@ import './styles/Home.css'
 import Footer from './subComponents/Footer';
 
 function Home() {
+
+  const spanRefs = useRef([]);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 1, // Change this value based on when you want the animation to trigger
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const span = entry.target;
+          span.style.animationDelay = `${span.dataset.index * 1}s`;
+          span.classList.add('fadeInLeft');
+          observer.unobserve(span);
+        }
+      });
+    }, options);
+
+    const spans = spanRefs.current;
+    spans.forEach((span, index) => {
+      span.dataset.index = index; // Store index as data attribute
+      observer.observe(span);
+    });
+
+    return () => {
+      observer.disconnect(); // Clean up observer on unmount
+    };
+  }, []);
+
   return (
     <div >
       <Header />
@@ -17,17 +49,17 @@ function Home() {
         <h2>Our Values</h2>
         <section className="value-columns">
           <div class="value-column">
-            <span>01</span>
+            <span ref={(el) => (spanRefs.current[0] = el)}>01</span>
             <h3>Dignity</h3>
             <p>We honor the dignity of individuals and acknowledge the inherent creative abilities within each person. Our investment atmosphere thrives on diversity and inclusivity.</p>
           </div>
           <div class="value-column">
-            <span>02</span>
+            <span ref={(el) => (spanRefs.current[1] = el)}>02</span>
             <h3>Integrity</h3>
             <p>We are dedicated to upholding what is ethical as it forms the foundation of our reputation. Essential to us are transparency, truthfulness, and responsibility.</p>
           </div>
           <div class="value-column">
-            <span>03</span>
+            <span ref={(el) => (spanRefs.current[2] = el)}>03</span>
             <h3>Innovation</h3>
             <p>
               We embrace the transformative potential of innovation in shaping lives. Adapting swiftly to the pace of technological advancements, we foster progressive breakthroughs by swiftly investing in promising developments.
