@@ -8,13 +8,13 @@ const MultiCarouselSlider = () => {
 
   const NextArrow = ({ onClick }) => (
     <div className="arrow next" onClick={onClick}>
-        Next
+        <i className="fa-solid fa-chevron-right"></i>
     </div>
   );
 
   const PrevArrow = ({ onClick }) => (
     <div className="arrow prev" onClick={onClick}>
-        Prev
+        <i className="fa-solid fa-chevron-left"></i>
     </div>
   );
 
@@ -22,7 +22,7 @@ const MultiCarouselSlider = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2.5, // Adjust the number of slides to show at a time
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -45,25 +45,22 @@ const MultiCarouselSlider = () => {
   };
 
   const carouselItems = [
-    <div className='item-1'>
+    <div className='item-1 item'>
       <h3>Full Stack Development</h3>
     </div>,
-    <div className='item-2'>  
+    <div className='item-2 item'>  
       <h3>Front-end Development</h3>
     </div>,
-    <div className='item-3'>
+    <div className='item-3 item'>
       <h3>Back-end Development</h3>
     </div>,
-    <div className='item-4'>
-      <h3>Databases</h3>
-    </div>,
-    <div className='item-5'>
+    <div className='item-5 item'>
       <h3>Graphic Design</h3>
     </div>,
-    <div className='item-6'>
+    <div className='item-6 item'>
       <h3>Accounting Services</h3>
     </div>,
-    <div className='item-7'>
+    <div className='item-7 item'>
       <h3>Virtual Assistance</h3>
     </div>,
   ];
