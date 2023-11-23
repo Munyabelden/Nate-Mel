@@ -4,9 +4,11 @@ import './styles/Contact.css';
 function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [number, setNumber] = useState('');
   const [message, setMessage] = useState('');
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
+  const [numberError, setNumberError] = useState('');
 
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -25,7 +27,12 @@ function Contact() {
     } else {
       setEmailError('');
     }
-    if (name.trim() !== '' && validateEmail(email)) {
+    if (number.trim() === '') {
+      setNumberError('Please enter a valid phone number address');
+    } else {
+      setNumberError('');
+    }
+    if (name.trim() !== '' && validateEmail(email) && number.trim()) {
       console.log('Name:', name);
       console.log('Email:', email);
       console.log('Message:', message);
@@ -47,7 +54,12 @@ function Contact() {
           {emailError && <div className="error">{emailError}</div>}
         </div>
         <div>
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="number">Phone Number:</label>
+          <input type="text" name="number" placeholder="Enter your phone number" id="number" value={number} onChange={(e) => setNumber(e.target.value)} required />
+          {emailError && <div className="error">{numberError}</div>}
+        </div>
+        <div>
+          <label htmlFor="message">How an we help:</label>
           <textarea name="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
         </div>
         <button type="submit">Submit</button>
