@@ -1,8 +1,8 @@
 .home-services-title {
   font-weight: 800;
   color: rgb(7, 24, 40);
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 70px;
+  margin-bottom: 50px;
   margin-left: 5%;
 }
 
@@ -27,6 +27,7 @@ h2 {
   flex-direction: row;
   justify-content: space-around;
   gap: 5%;
+  margin-bottom: 90px;
 }
 
 .value-column {

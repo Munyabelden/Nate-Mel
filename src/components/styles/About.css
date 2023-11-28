@@ -12,7 +12,7 @@
   color: #d5dfe1;
   height: 60vh;
   width: 100%;
-  background: rgb(5, 12, 36);
+  background: rgba(5, 21, 36);
 }
 
 .about-header h1 {
@@ -44,4 +44,5 @@
 
 .column h3 {
   margin-block: 15px;
+  font-size: 26px;
 }

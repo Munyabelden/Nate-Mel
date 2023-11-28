@@ -4,9 +4,9 @@ import '../styles/Footer.css';
 function Footer() {
   return (
     <div className='footer'>
-      <h2>Elevating your digital strategy with full-stack development</h2>
-      <div>
-        <div className="social-links">
+      <h2 className="footer-title">Elevating your digital strategy with full-stack development</h2>
+      <div className="contact-specs">
+        <div className="social-links-footer">
           <h4>Nate~Mel</h4>
           <ul>
             <li><a href="https://github.com/Munyabelden/" rel="noreferrer" target="_blank"><i className="fa-brands fa-square-github" /></a></li>

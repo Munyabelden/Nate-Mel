@@ -73,7 +73,6 @@ function Home() {
           <p>
             Our expertise in Full Stack development, offers end-to-end solutions for businesses looking to optimize their digital presence. Our team of experienced developers, designers, and project managers work together to deliver custom software solutions tailored to meet the unique needs of each client. Whether you're a startup or an established enterprise, we can help you build and launch software that scales with your business. Contact us today to learn more about how we can help you achieve your digital goals.
           </p>
-          <button>Get in touch</button>
         </div>
         <div className="image">
           <img src={Image} alt="company"/>
