@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from './subComponents/Footer';
 import './styles/Contact.css';
 
 function Contact() {
@@ -41,7 +42,9 @@ function Contact() {
 
   return (
     <div className="container">
-      <h2>Get in touch</h2>
+      <div className="contact-header">
+        <h2>Get in touch</h2>
+      </div>
       <div className="contacts">
         <form onSubmit={handleSubmit} className="form">
           <div>
@@ -60,15 +63,16 @@ function Contact() {
             {emailError && <div className="error">{numberError}</div>}
           </div>
           <div>
-            <label htmlFor="message">How an we help:</label>
-            <textarea name="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
+            <label htmlFor="message">How can we help:</label>
+            <textarea name="message" id="message" cols="40" rows="10" placeholder="Write your message here" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
           </div>
-          <button type="submit">Send</button>
+          <button type="submit" className="submit-button">Send</button>
         </form>
-        <div className="extras">
-          <span>Call Tatenda Zhou @ 07</span>
+        <div className="contact-extras">
+          {/* <span>Call Tatenda Zhou @ 07</span> */}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
