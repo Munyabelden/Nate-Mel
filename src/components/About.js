@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import Footer from './subComponents/Footer';
 import './styles/About.css';
 import image6 from './assets/medium.jpg';
@@ -9,10 +9,33 @@ import image2 from './assets/html.jpg';
 import Image1 from './assets/programming.jpg';
 
 function About() {
+  const [headerText, setHeaderText] = useState('Hi there!');
+  const [next, setNextIndex] = useState(1);
+
+  useEffect(() => {
+    const texts = ['Welcome to Nate~Mel', 'Where creativity meets functionality.', 'Get in touch'];
+    let count = 0;
+    let index = 0;
+  
+    const intervalId = setInterval(() => {
+      if (count >= texts[index].length) {
+        count = 0;
+        index = (index + 1) % texts.length;
+        setNextIndex((n) => (n + 1) % texts.length);
+      } else {
+        setHeaderText(texts[index].slice(0, count + 1));
+        count++;
+      }
+    }, 350);
+  
+    return () => clearInterval(intervalId);
+  }, []);  
   return (
     <div className="about">
       <div className="about-header">
-        <h1>Our Expertise</h1>
+        <div className="header-text-container">
+          <h1 className="header-text">{headerText}<span className="header-text-cursor">{next === 0 ? '|' : '|'}</span></h1>
+        </div>
         <p>
           Our commitment extends beyond code, as we empower businesses not only to thrive in the digital realm but also to navigate the complexities of financial management with confidence. Explore the intersection of cutting-edge technology and financial proficiency with our holistic suite of services tailored to elevate your business to new heights.
         </p>

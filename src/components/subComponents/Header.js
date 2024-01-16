@@ -9,8 +9,6 @@ import '../styles/Header.css';
 const backgrounds = [Bg1, Bg2, Bg3, Bg4, Bg5];
 
 function Header() {
-  const [headerText, setHeaderText] = useState('Hi there!');
-  const [next, setNextIndex] = useState(1);
   const [backgroundIndex, setBackgroundIndex] = useState(0);
 
   useEffect(() => {
@@ -22,26 +20,7 @@ function Header() {
     }, 5000);
   
     return () => clearInterval(intervalId);
-  }, []);  
-
-  useEffect(() => {
-    const texts = ['Welcome to Nate~Mel', 'Where creativity meets functionality.', 'Get in touch'];
-    let count = 0;
-    let index = 0;
-  
-    const intervalId = setInterval(() => {
-      if (count >= texts[index].length) {
-        count = 0;
-        index = (index + 1) % texts.length;
-        setNextIndex((n) => (n + 1) % texts.length);
-      } else {
-        setHeaderText(texts[index].slice(0, count + 1));
-        count++;
-      }
-    }, 350);
-  
-    return () => clearInterval(intervalId);
-  }, []);  
+  }, []);
 
   return (
     <div className="header" 
@@ -50,7 +29,7 @@ function Header() {
       }}
     >
       <div className="header-text-container">
-        <h1 className="header-text">{headerText}<span className="header-text-cursor">{next === 0 ? '|' : '|'}</span></h1>
+        <h1 className="header-1">Innovate Tomorrow, Today</h1>
       </div>
       <p>
          {/* We are a team of skilled professionals specializing in Front-end and Back-end software development, Graphic design, Accounting services, and Virtual assistance. With expertise in React, JavaScript, CSS, SASS, HTML, and Jest, we deliver websites and web apps that are tailored to your specific needs. Our graphic designer provides stunning logos and designs to make your brand stand out. Additionally, our accounting services and virtual assistance ensure that your business runs smoothly behind the scenes. Let us help you take your business to the next level. */}

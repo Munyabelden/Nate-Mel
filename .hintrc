@@ -10,7 +10,8 @@
           "width: fit-content",
           "backdrop-filter",
           "margin-inline",
-          "padding-inline"
+          "padding-inline",
+          "margin-block"
         ]
       }
     ],
