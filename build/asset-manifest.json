@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ae127d6a.css",
+    "main.js": "/static/js/main.2add5ad3.js",
+    "static/media/business-people-meeting.jpg": "/static/media/business-people-meeting.e55f39f4bc16856b649c.jpg",
+    "static/media/aerial-view-business-team.jpg": "/static/media/aerial-view-business-team.b4bdc4db026dfcbc4d7c.jpg",
+    "static/media/business.jpg": "/static/media/business.58ea6570af52f0f8f856.jpg",
+    "static/media/flat-lay-business-concept.jpg": "/static/media/flat-lay-business-concept.58ea6570af52f0f8f856.jpg",
+    "static/media/programming.jpg": "/static/media/programming.36e2959be38d93e51936.jpg",
+    "static/media/html.jpg": "/static/media/html.8f8c71f726d15e37664d.jpg",
+    "static/media/inspiration-development-modern-creative.jpg": "/static/media/inspiration-development-modern-creative.145324bb9ba7c8021de1.jpg",
+    "static/media/pexels-christina-morillo-1181244.jpg": "/static/media/pexels-christina-morillo-1181244.8eba742a6e2debfd2337.jpg",
+    "static/media/colors.jpg": "/static/media/colors.41d9ffaa4af970a2a69b.jpg",
+    "static/media/pexels-sora-shimazaki-5926387 (1).jpg": "/static/media/pexels-sora-shimazaki-5926387 (1).ba3aa1d053f24ed56d01.jpg",
+    "static/media/pexels-sora-shimazaki-5926387.jpg": "/static/media/pexels-sora-shimazaki-5926387.ba3aa1d053f24ed56d01.jpg",
+    "static/media/812.jpg": "/static/media/812.41abbff918637a0b7c69.jpg",
+    "static/media/pexels-cottonbro-studio-5473302.jpg": "/static/media/pexels-cottonbro-studio-5473302.c33b3fc072cc1aa96c61.jpg",
+    "static/media/pexels-djordje-petrovic-2102416 (1).jpg": "/static/media/pexels-djordje-petrovic-2102416 (1).6c4d91ad0983edbf6c19.jpg",
+    "static/media/medium.jpg": "/static/media/medium.041cfdf73ba29b8cf044.jpg",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.ae127d6a.css.map": "/static/css/main.ae127d6a.css.map",
+    "main.2add5ad3.js.map": "/static/js/main.2add5ad3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae127d6a.css",
+    "static/js/main.2add5ad3.js"
+  ]
+}
