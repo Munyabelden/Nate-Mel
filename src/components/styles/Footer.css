@@ -36,4 +36,8 @@
   color: rgb(153, 161, 167); 
 }
 
-
+@media (max-width: 800px) {
+  .footer-title {
+    font-size: 32px;
+  }
+}
