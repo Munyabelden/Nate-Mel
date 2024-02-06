@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 body {
