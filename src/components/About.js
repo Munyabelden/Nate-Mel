@@ -42,7 +42,7 @@ function About() {
       </div>
       <div className="columns">
         <div className="column">
-          <img src={Image1} alt=""/>
+          <img src={Image1} alt=""/>z
           <h3>Full Stack Web Development</h3>
           <p>
             Our Full-Stack Development service provides end-to-end solutions, covering both the frontend and backend aspects of web development. On the frontend, we specialize in crafting engaging and responsive user interfaces using HTML, CSS, and JavaScript (JS). Our backend expertise encompasses a variety of languages, including Ruby, Python, PHP, and the utilization of frameworks such as Ruby on Rails and Django. With proficiency in database management systems like PostgreSQL and SQL, we ensure seamless integration and optimal performance throughout the entire stack, delivering comprehensive and dynamic web applications.

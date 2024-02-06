@@ -11,7 +11,8 @@
           "backdrop-filter",
           "margin-inline",
           "padding-inline",
-          "margin-block"
+          "margin-block",
+          "padding-block"
         ]
       }
     ],
