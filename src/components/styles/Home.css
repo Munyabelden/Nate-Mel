@@ -32,11 +32,11 @@ h2 {
 
 .value-column {
   width: 300px;
-  transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
   -webkit-transition: 300ms ease-in-out;
   -moz-transition: 300ms ease-in-out;
   -ms-transition: 300ms ease-in-out;
-  -o-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .value-column:hover * {
@@ -54,11 +54,11 @@ h2 {
   margin-left: -20px;
   background: rgba(5, 21, 36);
   z-index: -1;
-  transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
   -ms-transition: all 400ms ease-in-out;
-  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .value-column:hover::before {
@@ -87,6 +87,10 @@ h2 {
   animation-fill-mode: both;
 }
 
+.value-column p {
+  color: #2b2d34;
+}
+
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -98,13 +102,36 @@ h2 {
   }
 }
 
+@media (max-width: 800px) {
+  .value-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    color: rgb(219, 223, 226);
+    background: rgba(5, 21, 36);
+    margin: 0;
+  }
+
+  .value-column p {
+    color: rgb(185, 189, 193)
+  }
+
+  .value-column::before {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-right: 20px;
+    width: 320px;
+    height: 350px;
+    margin-top: -20px;
+    margin-left: -20px;
+    background: rgba(5, 21, 36);
+  }
+}
+
 .fadeInLeft {
   animation-name: fadeInLeft;
   animation-duration: 1s;
-}
-
-.value-column p {
-  color: #2b2d34;
 }
 
 .image {
@@ -156,4 +183,37 @@ img {
 .strategy p {
   font-size: 18px;
   letter-spacing: 0.5px;
+}
+
+@media (max-width: 1200px) {
+  .details,
+  .strategy {
+    flex-direction: column-reverse;
+  }
+
+  .strategy h2,
+  .strategy p {
+    margin-left: 0;
+  }
+
+  .details p {
+    margin-right: 0;
+  }
+
+  .image,
+  img {
+    width: 100%;
+    -o-border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+}
+
+@media (max-width: 500px) {
+  .details h2,
+  .strategy h2 {
+    font-size: 36px;
+  }
 }
