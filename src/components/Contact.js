@@ -44,6 +44,23 @@ function Contact() {
     <div className="container">
       <div className="contact-header">
         <h2>Get in touch</h2>
+        <div className="contact-extras">
+          <div>
+            <h3>Tatenda Zhou</h3>
+            <span>+2772 066 3578</span>
+            <span>tatendaz127@gmail.com</span>
+          </div>
+          <div>
+            <h3>Grace Zhou</h3>
+            <span>+2767 263 9770</span>
+            <span>graceruvimbo681@gmail.com</span>
+          </div>
+          <div>
+            <h3>Munyaradzi Mugauri</h3>
+            <span>+2779 595 7913</span>
+            <span>munyaradzi045@gmail.com</span>
+          </div>
+        </div>
       </div>
       <div className="contacts">
         <form onSubmit={handleSubmit} className="form">
@@ -68,9 +85,6 @@ function Contact() {
           </div>
           <button type="submit" className="submit-button">Send</button>
         </form>
-        <div className="contact-extras">
-          {/* <span>Call Tatenda Zhou @ 07</span> */}
-        </div>
       </div>
       <Footer />
     </div>

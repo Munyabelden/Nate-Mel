@@ -16,6 +16,7 @@
   top: 0;
   left: 0;
   background: rgb(5, 21, 36);
+  padding-bottom: 0;
 }
 
 .contact-header h2 {
@@ -23,9 +24,27 @@
   font-size: 52px;
 }
 
+
+.contact-extras {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 0 10%;
+  color: rgb(185, 196, 207);;
+  margin-top: 30px;
+  margin-bottom: -80px;
+}
+
+.contact-extras div {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts {
   display: flex;
   flex-direction: row;
+  align-items: start;
+  justify-content: space-around;
   width: 100%;
   margin: 0;
   padding: 40px;
@@ -93,4 +112,23 @@
 
 .error {
   color: red;
+}
+
+@media (max-width: 768px) {
+  .contact-header{
+    height: 90vh;
+  }
+
+  .contact-header h2 {
+    font-size: 40px;
+  }
+
+  .contact-extras {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contacts .form {
+    width: 85%;
+  }
 }
