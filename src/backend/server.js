@@ -1,50 +1,47 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
 const app = express();
+const PORT = process.env.PORT || 3001;
 
-// Middleware for parsing JSON data
+// Middleware for parsing JSON and urlencoded form data
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// Endpoint to handle form submission
-app.post('/send-email', (req, res) => {
-  const { name, email, number, message } = req.body;
+// Define a route for sending emails
+app.post('/send-email', async (req, res) => {
+  try {
+    const { to, subject, text } = req.body;
 
-  // Create a Nodemailer transporter using your SMTP details
-  const transporter = nodemailer.createTransport({
-    service: 'Gmail',
-    auth: {
-      user: 'your-email@gmail.com',
-      pass: 'your-email-password'
-    }
-  });
+    // Create a Nodemailer transporter
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'your-email@gmail.com',
+        pass: 'your-email-password',
+      },
+    });
 
-  const mailOptions = {
-    from: 'your-email@gmail.com',
-    to: 'destination-email@example.com',
-    subject: 'New Contact Form Submission',
-    text: `
-      Name: ${name}\n
-      Email: ${email}\n
-      Phone Number: ${number}\n
-      Message: ${message}
-    `
-  };
+    // Define the email content
+    const mailOptions = {
+      from: 'your-email@gmail.com',
+      to,
+      subject,
+      text,
+    };
 
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.error(error);
-      res.status(500).send('Error: Unable to send email');
-    } else {
-      console.log('Email sent: ' + info.response);
-      res.status(200).send('Email sent successfully');
-    }
-  });
+    // Send the email
+    const info = await transporter.sendMail(mailOptions);
+
+    res.status(200).json({ message: 'Email sent successfully', info });
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
 });
 
-// Set the server to listen on a specific port
-const PORT = 5000; // Change this to your desired port
+// Start the server
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
